@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import React from "react";
 import "./globals.css";
 import { ThemeProvider } from "@/app/components/theme-switcher";
+import Navbar from '@/app/components/nav';
 import { Roboto_Mono } from "next/font/google";
 
 const robotoMono = Roboto_Mono({
@@ -35,6 +36,7 @@ export default function RootLayout(
           disableTransitionOnChange
         >
           <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col max-w-[640px] w-full">
+            <Navbar />
             {children}
           </main>
         </ThemeProvider>
