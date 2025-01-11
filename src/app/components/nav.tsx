@@ -4,6 +4,7 @@ import { useTheme } from "next-themes";
 import {JSX, useEffect, useState} from "react";
 
 const navItems = {
+  "/portfolio": {name: "Portfolio"},
   "/blog": {name: "Blog"},
   "/tools": {name: "Tools"},
 }
