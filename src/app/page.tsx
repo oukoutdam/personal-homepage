@@ -1,6 +1,6 @@
 export default function Page() {
   return (
-    <main>
+    <>
       <h2 className="text-xl">Hello,</h2>
       <p>My name is Ouk Outdam. Welcome to my personal website.</p>
       <br />
@@ -23,7 +23,6 @@ export default function Page() {
           </li>
         </ul>
       </div>
-    </main>
-
+    </>
   );
 }
