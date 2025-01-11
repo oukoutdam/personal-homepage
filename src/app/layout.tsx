@@ -29,7 +29,7 @@ export default function RootLayout(
   return (
     <html className={robotoMono.className} suppressHydrationWarning>
       <head></head>
-      <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-80">
+      <body className="antialiased flex flex-col items-center justify-center mt-2 lg:mt-8 mb-5 lg:mb-10 px-6">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
