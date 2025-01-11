@@ -5,6 +5,7 @@ export default function Page() {
       <p>My name is Ouk Outdam. Welcome to my personal website.</p>
       <br />
       <p className="leading-relaxed">I am a Computer Science student currently studying in Japan, pursuing my Master&apos;s degree in 2025. My research focuses on speech recognition, though I also enjoy writing various programs in different languages during my free time.</p>
+      <br />
       <div className="space-y-3">
         <p className="text-lg">What to expect on this website:</p>
         <ul className="space-y-2 list-none ml-4">
