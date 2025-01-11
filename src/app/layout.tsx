@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/app/components/theme-switcher";
 import Navbar from '@/app/components/nav';
 import { Roboto_Mono } from "next/font/google";
+import Footer from "./components/footer";
 
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],
@@ -38,6 +39,7 @@ export default function RootLayout(
           <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col max-w-[640px] w-full">
             <Navbar />
             {children}
+            <Footer />
           </main>
         </ThemeProvider>
       </body>
