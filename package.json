@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.7",
     "gray-matter": "^4.0.3",
     "isomorphic-dompurify": "^2.20.0",
     "marked": "^15.0.6",
