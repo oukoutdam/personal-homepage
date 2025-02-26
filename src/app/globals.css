@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    progress {
+      @apply w-64 h-2 rounded-full;
+    }
+    
+    progress::-webkit-progress-bar {
+      @apply bg-gray-200 dark:bg-gray-700 rounded-full;
+    }
+    
+    progress::-webkit-progress-value {
+      @apply bg-blue-600 dark:bg-blue-500 rounded-full;
+    }
+    
+    progress::-moz-progress-bar {
+      @apply bg-blue-600 dark:bg-blue-500 rounded-full;
+    }
+  }
