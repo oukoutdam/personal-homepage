@@ -6,3 +6,9 @@ description: "test description 2"
 
 ## test 2 
 this is a test page 2
+
+this is a code section
+
+```
+print("hello world")
+```

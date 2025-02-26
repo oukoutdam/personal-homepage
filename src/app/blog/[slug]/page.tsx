@@ -5,6 +5,7 @@ import fs from 'fs';
 import path from 'path';
 
 import { getPost } from '@/app/lib/getPosts';
+import markdownStyles from "@/app/blog/[slug]/markdown.module.css";
 
 // Mark the component as generating static pages
 export const dynamic = 'force-static';
@@ -22,7 +23,7 @@ export default async function Post({ params }: PostProps) {
   console.log(safeHtml);
 
   return (
-    <article>
+    <article className={markdownStyles.markdown}>
         <header>
             <h1>{metadata.title}</h1>
             {metadata.date && (<time dateTime={metadata.date}>{new Date(metadata.date).toLocaleDateString()}</time>)}
