@@ -4,7 +4,7 @@ import Heading from './components/Heading';
 export default function Page() {
   return (
     <>
-      <h1 className='mb-4 text-xl font-bold'>Welcome to my Portfolio.</h1>
+      <h1 className='mb-4 text-xl font-bold'>Welcome to my Résumé.</h1>
 
       <Heading text='About Me' />
       <div>
