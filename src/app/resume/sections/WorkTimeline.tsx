@@ -56,11 +56,9 @@ function WorkTimeline() {
               style={{ top: `${index * itemHeight - 5}px` }}
             >
               <h3 className='text-lg font-semibold'>{work.company}</h3>
-              <p className='mb-1 text-gray-600'>{work.role}</p>
-              <p className='text-sm text-gray-500'>{work.period}</p>
-              <p className='text-sm text-gray-500'>
-                Technologies: {work.technologies}
-              </p>
+              <p className='mb-1'>{work.role}</p>
+              <p className='text-sm'>{work.period}</p>
+              <p className='text-sm'>Technologies: {work.technologies}</p>
             </div>
           ))}
         </div>

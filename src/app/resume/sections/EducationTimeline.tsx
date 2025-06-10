@@ -71,8 +71,8 @@ function EducationTimeline() {
               style={{ top: `${index * itemHeight - 5}px` }}
             >
               <h3 className='text-lg font-semibold'>{edu.institution}</h3>
-              <p className='mb-1 text-gray-600'>{edu.program}</p>
-              <p className='text-sm text-gray-500'>{edu.period}</p>
+              <p className='mb-1'>{edu.program}</p>
+              <p className='text-sm'>{edu.period}</p>
             </div>
           ))}
         </div>
