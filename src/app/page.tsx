@@ -21,13 +21,13 @@ export default function Page() {
               overview of my background and experiences
             </span>
           </li>
-          <li className='flex items-start'>
+          {/* <li className='flex items-start'>
             <span className='mr-2'>•</span>
             <span>
               <strong className='font-medium'>Blog</strong> - A space where I
               document and share what I learn
             </span>
-          </li>
+          </li> */}
           <li className='flex items-start'>
             <span className='mr-2'>•</span>
             <span>

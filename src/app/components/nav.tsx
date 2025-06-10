@@ -5,7 +5,7 @@ import { JSX, useEffect, useState } from 'react';
 
 const navItems = {
   '/resume': { name: 'Résumé' },
-  '/blog': { name: 'Blog' },
+  // '/blog': { name: 'Blog' },
   '/projects': { name: 'Projects' },
 };
 
