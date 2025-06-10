@@ -31,7 +31,7 @@ export default function Page() {
           <li className='flex items-start'>
             <span className='mr-2'>•</span>
             <span>
-              <strong className='font-medium'>Tools</strong> - A showcase of
+              <strong className='font-medium'>Projects</strong> - A showcase of
               programs I&apos;ve made
             </span>
           </li>

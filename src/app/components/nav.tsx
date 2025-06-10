@@ -6,7 +6,7 @@ import { JSX, useEffect, useState } from 'react';
 const navItems = {
   '/resume': { name: 'Résumé' },
   '/blog': { name: 'Blog' },
-  '/tools': { name: 'Tools' },
+  '/projects': { name: 'Projects' },
 };
 
 export default function Navbar(): JSX.Element {
