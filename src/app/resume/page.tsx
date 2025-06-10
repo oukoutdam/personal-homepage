@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import Heading from './components/Heading';
 import ProgressBlock from './components/ProgressBlock';
-import EducationTimeline from './education/EducationTimeline';
-import WorkTimeline from './work/WorkTimeline';
+import EducationTimeline from './sections/EducationTimeline';
+import WorkTimeline from './sections/WorkTimeline';
+import ExtracurricularActivities from './sections/ExtracurricularActivities';
 
 export default function Page() {
   return (
@@ -112,6 +113,7 @@ export default function Page() {
 
       <div>
         <Heading text='Extracurricular Activities' />
+        <ExtracurricularActivities />
       </div>
 
       <div>
