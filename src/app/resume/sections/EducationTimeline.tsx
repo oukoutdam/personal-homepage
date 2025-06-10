@@ -2,24 +2,25 @@ function EducationTimeline() {
   const educationData = [
     {
       institution: 'Toyohashi University of Technology',
-      program:
-        'Graduate School of Engineering, Computer Science and Engineering',
+      faculty: 'Graduate School of Engineering',
+      course: 'Computer Science and Engineering',
       period: '2025 - Present',
       current: true,
     },
     {
       institution: 'Toyohashi University of Technology',
-      program: 'School of Engineering, Computer Science and Engineering',
+      faculty: 'School of Engineering',
+      course: 'Computer Science and Engineering',
       period: '2023 - 2025',
     },
     {
       institution: 'Oshima National College of Maritime Technology',
-      program: 'Department of Information Science and Technology',
+      course: 'Department of Information Science and Technology',
       period: '2020 - 2023',
     },
     {
       institution: 'JASSO Tokyo Japanese Language Education Center',
-      program: 'Japanese Language Course',
+      course: 'Japanese Language Course',
       period: '2019 - 2020',
     },
   ];
@@ -71,7 +72,8 @@ function EducationTimeline() {
               style={{ top: `${index * itemHeight - 5}px` }}
             >
               <h3 className='text-base font-semibold'>{edu.institution}</h3>
-              <p className='mb-1'>{edu.program}</p>
+              {edu.faculty && <p>{edu.faculty}</p>}
+              <p className='mb-1'>{edu.course}</p>
               <p className='text-sm'>{edu.period}</p>
             </div>
           ))}
