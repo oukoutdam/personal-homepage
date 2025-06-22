@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import basePathPrefix from '@/app/basePathPrefix';
 
 function AboutMe() {
   return (
@@ -9,7 +10,7 @@ function AboutMe() {
           <div className='flex-shrink-0'>
             <Image
               className='rounded-lg shadow-md'
-              src='/oukoutdam_photo.jpeg'
+              src={`${basePathPrefix}/oukoutdam_photo.jpeg`}
               alt='Photo of Ouk Outdam'
               width={280}
               height={280}
