@@ -7,7 +7,7 @@ function ProgressBlock({
   value: number;
   level?: string;
 }) {
-  const getProgressColor = (level) => {
+  const getProgressColor = (level?: string) => {
     switch (level) {
       case 'Advanced':
         return 'bg-green-500';
