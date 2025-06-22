@@ -4,6 +4,7 @@ import ProgressBlock from './components/ProgressBlock';
 import EducationTimeline from './sections/EducationTimeline';
 import WorkTimeline from './sections/WorkTimeline';
 import ExtracurricularActivities from './sections/ExtracurricularActivities';
+import AwardsAchievements from './sections/AwardsAchievements';
 
 export default function Page() {
   return (
@@ -118,6 +119,7 @@ export default function Page() {
 
       <div>
         <Heading text='Awards & Achievements' />
+        <AwardsAchievements />
       </div>
     </>
   );
