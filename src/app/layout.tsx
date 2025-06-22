@@ -5,6 +5,7 @@ import { ThemeProvider } from '@/app/components/theme-switcher';
 import Navbar from '@/app/components/nav';
 import { Roboto_Mono } from 'next/font/google';
 import Footer from './components/footer';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],
@@ -39,6 +40,7 @@ export default function RootLayout({
             {children}
             <Footer />
           </main>
+          <ScrollToTopButton />
         </ThemeProvider>
       </body>
     </html>
