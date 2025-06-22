@@ -5,6 +5,7 @@ import EducationTimeline from './sections/EducationTimeline';
 import WorkTimeline from './sections/WorkTimeline';
 import ExtracurricularActivities from './sections/ExtracurricularActivities';
 import AwardsAchievements from './sections/AwardsAchievements';
+import TechnicalSkills from './sections/TechnicalSkills';
 
 export default function Page() {
   return (
@@ -80,20 +81,8 @@ export default function Page() {
         </p>
       </div>
       <div>
-        <Heading text='Computer Languages' />
-        <div className='p-4'>
-          <ProgressBlock name='Python' value={90} />
-          <ProgressBlock name='Java' value={70} />
-          <ProgressBlock name='Typescript/Javascript' value={70} />
-          <ProgressBlock name='HTML/CSS' value={70} />
-          <ProgressBlock name='C' value={60} />
-          <p>I also have some experience in:</p>
-          <ul>
-            <li>Game Development with Unity</li>
-            <li>Prototyping with Arduino and Raspberry Pi</li>
-            <li>3D modeling with Fusion360 & 3D Printing</li>
-          </ul>
-        </div>
+        <Heading text='Technical Skills' />
+        <TechnicalSkills />
       </div>
       <div>
         <Heading text='Human Languages' />
