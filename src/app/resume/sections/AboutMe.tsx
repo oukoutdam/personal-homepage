@@ -1,6 +1,9 @@
 import Image from 'next/image';
 
 function AboutMe() {
+  console.log(`${process.env.NODE_ENV}`);
+  console.log(`${process.env.PAGES_BASE_PATH}`);
+
   return (
     <>
       <div className='p-4'>
