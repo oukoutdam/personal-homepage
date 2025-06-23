@@ -1,6 +1,10 @@
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 function AboutMe() {
+  const router = useRouter();
+  const basePath = router.basePath;
+
   return (
     <>
       <div className='p-4'>
@@ -9,7 +13,7 @@ function AboutMe() {
           <div className='flex-shrink-0'>
             <Image
               className='rounded-lg shadow-md'
-              src={'/oukoutdam_photo.jpeg'}
+              src={`${basePath}/oukoutdam_photo.jpeg`}
               alt='Photo of Ouk Outdam'
               width={280}
               height={280}
