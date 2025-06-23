@@ -1,3 +1,5 @@
+import React from 'react';
+
 function WorkTimeline() {
   const workData = [
     {
@@ -9,59 +11,39 @@ function WorkTimeline() {
     },
   ];
 
-  const itemHeight = 100; // Height of each item in the timeline
-  const svgHeight = (workData.length - 1) * itemHeight + 40; // Calculate SVG height based on items
-  const sectionHeight = svgHeight + 40; // Add some padding for the section
-
   return (
-    <div className='ml-4 max-w-2xl p-4'>
-      <div className='relative' style={{ height: `${sectionHeight}px` }}>
-        {/* SVG Timeline */}
-        <svg
-          width='40'
-          height={svgHeight}
-          className='absolute left-0 top-0'
-          viewBox={`0 0 40 ${svgHeight}`}
-        >
-          {/* Main timeline line */}
-          <line
-            x1='20'
-            y1='10'
-            x2='20'
-            y2={svgHeight - 30}
-            stroke='#d1d5db'
-            strokeWidth='2'
-          />
+    <div className='max-w-2xl p-4'>
+      <div className='relative'>
+        {/* We map over the data to create each timeline entry as a self-contained unit */}
+        {workData.map((work, index) => (
+          <div key={index} className='relative flex pb-8 last:pb-0'>
+            {/* Left side: The timeline's dot and connecting line */}
+            <div className='flex h-auto w-10 flex-shrink-0 flex-col items-center pt-2'>
+              {/* The Dot */}
+              <div
+                className={`relative z-10 h-4 w-4 rounded-full border-2 border-white ${
+                  work.current ? 'bg-blue-500' : 'bg-gray-400'
+                }`}
+              ></div>
 
-          {/* Timeline dots */}
-          {workData.map((work, index) => (
-            <circle
-              key={index}
-              cx='20'
-              cy={10 + index * itemHeight}
-              r='6'
-              fill={work.current ? '#3b82f6' : '#9ca3af'}
-              stroke='white'
-              strokeWidth='2'
-            />
-          ))}
-        </svg>
-
-        {/* Content items */}
-        <div className='ml-12'>
-          {workData.map((work, index) => (
-            <div
-              key={index}
-              className='absolute'
-              style={{ top: `${index * itemHeight - 5}px` }}
-            >
-              <h3 className='text-base font-semibold'>{work.company}</h3>
-              <p className='mb-1'>{work.role}</p>
-              <p className='text-sm'>{work.period}</p>
-              <p className='text-sm'>Technologies: {work.technologies}</p>
+              {/* The connecting line - hidden for the last item */}
+              {index < workData.length && (
+                <div className='mt-1 h-full w-0.5 bg-gray-300'></div>
+              )}
             </div>
-          ))}
-        </div>
+
+            {/* Right side: The work experience content */}
+            <div className='flex-grow pl-4'>
+              <h3 className='text-lg font-semibold'>{work.company}</h3>
+              <p>{work.role}</p>
+              <p className='mt-1 text-sm'>{work.period}</p>
+              <p className='mt-1 text-sm'>
+                <span className='font-medium'>Technologies:</span>{' '}
+                {work.technologies}
+              </p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
