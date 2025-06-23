@@ -1,3 +1,3 @@
-const basePathPrefix = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const basePathPrefix = process.env.PAGES_BASE_PATH || '';
 
 export default basePathPrefix;

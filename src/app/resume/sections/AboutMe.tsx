@@ -1,9 +1,7 @@
 import Image from 'next/image';
+import basePathPrefix from '@/app/basePathPrefix';
 
 function AboutMe() {
-  console.log(`${process.env.NODE_ENV}`);
-  console.log(`${process.env.PAGES_BASE_PATH}`);
-
   return (
     <>
       <div className='p-4'>
@@ -12,7 +10,7 @@ function AboutMe() {
           <div className='flex-shrink-0'>
             <Image
               className='rounded-lg shadow-md'
-              src={`${process.env.PAGES_BASE_PATH}/oukoutdam_photo.jpeg`}
+              src={`${basePathPrefix}/oukoutdam_photo.jpeg`}
               alt='Photo of Ouk Outdam'
               width={280}
               height={280}

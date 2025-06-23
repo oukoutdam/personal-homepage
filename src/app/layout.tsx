@@ -6,6 +6,7 @@ import Navbar from '@/app/components/nav';
 import { Roboto_Mono } from 'next/font/google';
 import Footer from './components/footer';
 import ScrollToTopButton from './components/ScrollToTopButton';
+import basePathPrefix from './basePathPrefix';
 
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],
@@ -16,7 +17,7 @@ export const metadata: Metadata = {
   title: "Ouk Outdam's Home",
   description: "This is Ouk Outdam's Personal Home page. Made With NextJS",
   icons: {
-    icon: '/favicon.ico',
+    icon: `${basePathPrefix}/favicon.ico`,
   },
 };
 
