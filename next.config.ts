@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
 
   // fix paths for github pages
   basePath: process.env.PAGES_BASE_PATH,
+  assetPrefix: process.env.PAGES_BASE_PATH,
 };
 
 export default nextConfig;
