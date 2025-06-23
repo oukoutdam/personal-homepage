@@ -21,7 +21,7 @@ function WorkTimeline() {
             <div className='flex h-auto w-10 flex-shrink-0 flex-col items-center pt-2'>
               {/* The Dot */}
               <div
-                className={`relative z-10 h-4 w-4 rounded-full border-2 border-white ${
+                className={`relative z-10 h-4 w-4 rounded-full border-2 border-black dark:border-white ${
                   work.current ? 'bg-blue-500' : 'bg-gray-400'
                 }`}
               ></div>
