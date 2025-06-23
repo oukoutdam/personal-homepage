@@ -6,7 +6,7 @@ const myProjects: ProjectCardProps[] = [
     description:
       'A simple rock-paper-scissors web app I built for my friends to use when everyone was too busy to talk in real time. Players can register their moves, and the app reveals the winner once all choices are submitted. This project was a way for me to learn and practice using Express.js and MongoDB.',
     status: 'brushing-up',
-    link: 'https://github.com/oukoutdam/yoyaku_janken',
+    link: 'https://yoyaku-janken.onrender.com',
   },
   {
     name: 'Speaking With ChatGPT',
