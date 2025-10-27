@@ -7,6 +7,7 @@ const navItems = {
   '/resume': { name: 'Résumé' },
   // '/blog': { name: 'Blog' },
   '/projects': { name: 'Projects' },
+  '/contact': { name: 'Contact' },
 };
 
 export default function Navbar(): JSX.Element {
