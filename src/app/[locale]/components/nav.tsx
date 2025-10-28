@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { JSX, useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 const navItems = {
   '/resume': { name: 'Résumé' },
@@ -13,6 +14,7 @@ const navItems = {
 export default function Navbar(): JSX.Element {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false); // this is for hydration warinings, by not mounting the component on the server
+  const t = useTranslations('Nav');
 
   useEffect(() => {
     setMounted(true);
@@ -23,7 +25,7 @@ export default function Navbar(): JSX.Element {
       <div className='flex flex-col justify-between md:flex-row md:items-center'>
         <div className='flex items-center'>
           <Link href='/' className='text-3xl font-semibold tracking-tight'>
-            Ouk Outdam&apos;s Page
+            {t('title')}
           </Link>
         </div>
         <div className='mt-6 flex flex-row items-center gap-4 md:ml-auto md:mt-0'>

@@ -1,12 +1,15 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import './globals.css';
-import { ThemeProvider } from '@/app/components/theme-switcher';
-import Navbar from '@/app/components/nav';
+import { ThemeProvider } from '@/app/[locale]/components/theme-switcher';
+import Navbar from '@/app/[locale]/components/nav';
 import { Roboto_Mono } from 'next/font/google';
 import Footer from './components/footer';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import basePathPrefix from './basePathPrefix';
+import { NextIntlClientProvider, hasLocale } from 'next-intl';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 
 const robotoMono = Roboto_Mono({
   subsets: ['latin'],
@@ -21,11 +24,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
   return (
     <html className={robotoMono.className} suppressHydrationWarning>
       <head></head>
@@ -36,12 +46,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className='mt-2 flex w-full min-w-0 max-w-[800px] flex-auto flex-col md:mt-6'>
-            <Navbar />
-            {children}
-            <Footer />
-          </main>
-          <ScrollToTopButton />
+          <NextIntlClientProvider>
+            <main className='mt-2 flex w-full min-w-0 max-w-[800px] flex-auto flex-col md:mt-6'>
+              <Navbar />
+              {children}
+              <Footer />
+            </main>
+            <ScrollToTopButton />
+          </NextIntlClientProvider>
         </ThemeProvider>
       </body>
     </html>

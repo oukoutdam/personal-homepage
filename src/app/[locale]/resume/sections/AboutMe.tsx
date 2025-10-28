@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import basePathPrefix from '@/app/basePathPrefix';
+import basePathPrefix from '@/app/[locale]/basePathPrefix';
 
 function AboutMe() {
   return (

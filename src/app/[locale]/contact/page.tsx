@@ -2,7 +2,10 @@
 
 import { useActionState } from 'react';
 import { useFormStatus } from 'react-dom';
-import { ContactFormState, sendContactEmail } from '@/app/contact/actions';
+import {
+  ContactFormState,
+  sendContactEmail,
+} from '@/app/[locale]/contact/actions';
 import { useEffect, useRef } from 'react';
 import styles from './contact-form.module.css';
 
