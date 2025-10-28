@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useTheme } from 'next-themes';
 import { JSX, useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import LanguageSwitcher from './language-switcher';
 
 const navItems = {
   '/resume': { name: 'Résumé' },
@@ -70,6 +71,7 @@ export default function Navbar(): JSX.Element {
               </svg>
             )}
           </button>
+          <LanguageSwitcher />
         </div>
       </div>
     </nav>
