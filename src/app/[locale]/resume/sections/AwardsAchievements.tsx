@@ -25,7 +25,8 @@ function AwardsAchievements() {
     },
     {
       title: 'Outstanding Graduating Student Award',
-      organization: '電気・情報関連学会中国支部',
+      organization:
+        'Chugoku Branch of the Societies Related to Electricity and Information',
       year: '2023',
       description:
         'Awarded for academic excellence by a consortium of electrical and information engineering societies in the Chūgoku region',
