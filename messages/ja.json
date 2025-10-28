@@ -1,5 +1,20 @@
 {
   "Nav": {
-    "title": "Ouk Outdamのページ"
+    "title": "Ouk Outdamのページ",
+    "resume": "履歴書",
+    "projects": "制作物",
+    "contact": "問い合わせ"
+  },
+  "Index": {
+    "hello": "こんにちは、",
+    "welcome": "オック　オドムと申します。私の個人サイトへようこそ。",
+    "introduction": "私は日本で学ぶコンピュータサイエンスの学生で、2027年に修士号を取得予定です。研究は音声認識に焦点を当てていますが、自由な時間には様々な言語でプログラムを書くことも楽しんでいます。",
+    "list-intro": "このサイトで見られるもの：",
+    "list-resume-title": "履歴書",
+    "list-resume-desc": "私の学歴とスキル",
+    "list-projects-title": "制作物",
+    "list-projects-desc": "私が作成したプログラム",
+    "list-contact-title": "お問い合わせ",
+    "list-contact-desc": "私へのご連絡"
   }
 }

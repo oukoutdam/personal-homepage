@@ -1,5 +1,20 @@
 {
   "Nav": {
-    "title": "Ouk Outdam's Page"
+    "title": "Ouk Outdam's Page",
+    "resume": "Résumé",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Index": {
+    "hello": "Hello,",
+    "welcome": "My name is Ouk Outdam. Welcome to my personal website.",
+    "introduction": "I am a Computer Science student currently studying in Japan, planning to get my Master's degree in 2027. My research focuses on speech recognition, though I also enjoy writing various programs in different languagesduring my free time.",
+    "list-intro": "What to expect on this website:",
+    "list-resume-title": "Résumé",
+    "list-resume-desc": "My academic background and skills",
+    "list-projects-title": "Projects",
+    "list-projects-desc": "A showcase of programs I've made",
+    "list-contact-title": "Contact",
+    "list-contact-desc": "Get in touch with me"
   }
 }

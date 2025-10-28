@@ -6,10 +6,10 @@ import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './language-switcher';
 
 const navItems = {
-  '/resume': { name: 'Résumé' },
+  '/resume': { name: 'resume' },
   // '/blog': { name: 'Blog' },
-  '/projects': { name: 'Projects' },
-  '/contact': { name: 'Contact' },
+  '/projects': { name: 'projects' },
+  '/contact': { name: 'contact' },
 };
 
 export default function Navbar(): JSX.Element {
@@ -36,7 +36,7 @@ export default function Navbar(): JSX.Element {
               key={path}
               className='relative flex align-middle text-lg transition-all hover:text-neutral-800 dark:hover:text-neutral-200'
             >
-              {name}
+              {t(name)}
             </Link>
           ))}
           <button
