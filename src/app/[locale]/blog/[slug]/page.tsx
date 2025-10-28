@@ -5,7 +5,7 @@ import fs from 'fs';
 import path from 'path';
 
 import { getPost } from '@/app/[locale]/lib/getPosts';
-import markdownStyles from '@/app/blog/[slug]/markdown.module.css';
+import markdownStyles from './markdown.module.css';
 
 // Mark the component as generating static pages
 export const dynamic = 'force-static';
